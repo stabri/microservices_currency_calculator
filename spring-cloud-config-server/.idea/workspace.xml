@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48f46c24-40a7-40a4-be4c-2ef290e262af" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../zulu-api-gateway-server/src/main/java/com/ps/zuluapigatewayserver/ZuulLoginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../currency-conversion-serviece/src/main/java/com/paul/currencyconversionserviece/CurrencyExchangeProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../currency-conversion-serviece/src/main/java/com/paul/currencyconversionserviece/CurrencyExchangeProxy.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -266,7 +265,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="791" width="1535" height="799" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25318152" />
       <window_info id="Structure" order="1" weight="0.25" />
