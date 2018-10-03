@@ -2,6 +2,8 @@ package com.paul.currencyconversionserviece.controllers;
 
 import com.paul.currencyconversionserviece.CurrencyExchangeProxy;
 import com.paul.currencyconversionserviece.entities.ConversionBean;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +17,9 @@ import java.util.Map;
 
 @RestController
 public class CurrencyConversionControler {
+
+
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     private CurrencyExchangeProxy currencyExhchangeProxy;
@@ -46,6 +51,9 @@ public class CurrencyConversionControler {
 
         BigDecimal quant = BigDecimal.valueOf(Long.valueOf(quantity));
         BigDecimal multiple = response.getConversionMultiple();
+
+        logger.info("{}", response);
+
         return new ConversionBean(response.getId(), response.getFrom(), response.getTo(),
                 multiple, quant, quant.multiply(multiple));
     }

@@ -14,9 +14,4 @@ public class ZuluApiGatewayServerApplication {
     public static void main(String[] args) {
         SpringApplication.run(ZuluApiGatewayServerApplication.class, args);
     }
-
-    @Bean
-    public  defaultSampler(){
-        return new ();
-    }
 }
